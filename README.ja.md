@@ -6,9 +6,13 @@
 ![Open Issues](https://img.shields.io/github/issues-raw/Comamoca/baserepo?style=flat-square)
 ![Bug Issues](https://img.shields.io/github/issues/Comamoca/baserepo/bug?style=flat-square)
 
-# 🦊 emoji2svg
+<img src="https://emoji2svg.deno.dev/api/🍣" alt="eyecatch" height="100">
 
-API of convert emoji to SVG🍣
+# emoji2svg
+絵文字をSVGに変換するAPIです🍣
+
+<br>
+<br>
 
 </div>
 
@@ -28,7 +32,7 @@ API of convert emoji to SVG🍣
 ## 🚀 使い方
 
 ```
-curl "api url"
+curl https://emoji2svg.deno.dev/api/🦊
 ```
 
 ## ⛏️   開発
