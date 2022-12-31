@@ -1,5 +1,5 @@
-import { Application, Router } from 'https://deno.land/x/oak/mod.ts'
-import 	{ parse } from "npm:twemoji-parser"
+import { Application, Router } from 'oak'
+import 	{ parse } from "twemoji-parser"
 
 function emoji2Url(emoji: string): string {
 	const entities = parse(emoji)

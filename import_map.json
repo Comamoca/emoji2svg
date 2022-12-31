@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "oak": "https://deno.land/x/oak/mod.ts",
+    "twemoji-parser": "npm:twemoji-parser"
+  }
+}
