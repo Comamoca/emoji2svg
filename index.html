@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>emoji2svg API</title>
+
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css" integrity="sha512-USRvpT7dJFA7mrRx4+esmy+2mYr8vlgmDLFpkNeVEd+D5CgQvULKPYVnDV97Ywfek+e//HdSA0NlaPe4oqkwfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+		<style>
+.markdown-body {
+	box-sizing: border-box;
+	min-width: 200px;
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 45px;
+}
+
+			@media (max-width: 767px) {
+				.markdown-body {
+					padding: 15px;
+				}
+			}
+		</style>
+	</head>
+	<body style="background-color: #0d1117; font-family: 'Mukta', sans-serif;">
+		<div align="center" style="margin-bottom: 2rem; color: #ffffff;">
+				<div style="font-size: 5rem;">🍣</div>
+				<div style="font-size: 2rem;">emoji2svg</div>
+				<div style="font-size: 1.3rem;">API of convert emoji to SVG🍣</div>
+		</div>
+		<div id="content" class="markdown-body">
+			<div align="center" style="margin-bottom: 4rem">
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script>
+			const text = `
+## 🚀 How to use
+
+<code>
+curl "api url"
+</code>
+
+## ⛏️   Development
+
+<code>
+deno task run
+</code>
+
+## 📝 Todo
+
+- [ ] Allow size selection
+
+## 📜 License
+
+Licenses are important for open source. Be sure to write it.
+
+### 🧩 Modules
+
+
+## 👏 Affected projects
+
+[URLで絵文字を指定したらTwemoji画像を返す仕組みを作った by Cloud Functions](https://zenn.dev/team_zenn/articles/5b331a95a6f6f5)
+			`
+			document.getElementById('content').innerHTML =
+				marked.parse(text)
+		</script>
+	</body>
+</html>
