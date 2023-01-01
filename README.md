@@ -28,7 +28,7 @@ API of convert emoji to SVG🍣
 ## 🚀 How to use
 
 ```
-curl "api url"
+curl https://emoji2svg.deno.dev/api/🦊
 ```
 
 ## ⛏️   Development
