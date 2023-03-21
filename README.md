@@ -5,10 +5,12 @@
 ![Issues](https://img.shields.io/github/issues/Comamoca/baserepo?style=flat-square)
 ![Open Issues](https://img.shields.io/github/issues-raw/Comamoca/baserepo?style=flat-square)
 ![Bug Issues](https://img.shields.io/github/issues/Comamoca/baserepo/bug?style=flat-square)
+![Uptime Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Comamoca/status/master/api/emoji2svg/uptime-day.json&style=flat-square)
 
 <img src="https://emoji2svg.deno.dev/api/🍣" alt="eyecatch" height="100">
 
 # emoji2svg
+
 API of convert emoji to SVG🍣
 
 <br>
@@ -35,11 +37,12 @@ API of convert emoji to SVG🍣
 curl https://emoji2svg.deno.dev/api/🦊
 ```
 
-## ⛏️   Development
+## ⛏️ Development
 
 ```sh
 deno task run
 ```
+
 ## 📝 Todo
 
 - [ ] Allow size selection
