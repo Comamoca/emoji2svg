@@ -51,7 +51,7 @@ MIT
 
 ### 🧩 Modules
 
-- [Oak](https://oakserver.github.io/oak/)
+- [Hono](https://hono.dev)
 - [twemoji-parser](https://github.com/twitter/twemoji-parser)
 
 ## 👏 影響を受けたプロジェクト
