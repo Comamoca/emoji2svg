@@ -1,6 +1,11 @@
 {
+  "imports": {
+    "hono": "https://deno.land/x/hono@v4.1.5/mod.ts",
+    "twemoji": "npm:@twemoji/api",
+    "domparser": "https://deno.land/x/deno_dom/deno-dom-wasm.ts",
+    "middleware": "https://deno.land/x/hono@v4.1.5/middleware.ts"
+  },
   "tasks": {
     "run": "deno run -A main.ts"
   },
-   "importMap": "import_map.json"
 }
