@@ -15,6 +15,7 @@
       "jsr:@std/media-types@0.218": "jsr:@std/media-types@0.218.2",
       "jsr:@std/path@0.218": "jsr:@std/path@0.218.2",
       "npm:@twemoji/api": "npm:@twemoji/api@15.1.0",
+      "npm:ky": "npm:ky@1.2.3",
       "npm:path-to-regexp@6.2.1": "npm:path-to-regexp@6.2.1",
       "npm:twemoji-parser": "npm:twemoji-parser@14.0.0"
     },
@@ -100,6 +101,10 @@
           "universalify": "universalify@0.1.2"
         }
       },
+      "ky@1.2.3": {
+        "integrity": "sha512-2IM3VssHfG2zYz2FsHRUqIp8chhLc9uxDMcK2THxgFfv8pQhnMfN8L0ul+iW4RdBl5AglF8ooPIflRm3yNH0IA==",
+        "dependencies": {}
+      },
       "path-to-regexp@6.2.1": {
         "integrity": "sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==",
         "dependencies": {}
@@ -116,7 +121,8 @@
   },
   "redirects": {
     "https://deno.land/x/deno_dom/deno-dom-wasm.ts": "https://deno.land/x/deno_dom@v0.1.45/deno-dom-wasm.ts",
-    "https://deno.land/x/oak/mod.ts": "https://deno.land/x/oak@14.2.0/mod.ts"
+    "https://deno.land/x/oak/mod.ts": "https://deno.land/x/oak@14.2.0/mod.ts",
+    "https://deno.land/x/sentry/index.mjs": "https://deno.land/x/sentry@7.109.0/index.mjs"
   },
   "remote": {
     "https://deno.land/std@0.152.0/_util/assert.ts": "e94f2eb37cebd7f199952e242c77654e43333c1ac4c5c700e929ea3aa5489f74",
@@ -236,8 +242,11 @@
     "https://deno.land/x/oak@v11.1.0/types.d.ts": "41951a18c3bfdb11e40707cab75da078ba8a4907cd7d4e11d8536bc2db0dde05",
     "https://deno.land/x/oak@v11.1.0/util.ts": "3af8c4ed04c6cc2bedbe66e562a77fc59c72df31c55a902a63885861ca1639d6",
     "https://deno.land/x/path_to_regexp@v6.2.1/index.ts": "894060567837bae8fc9c5cbd4d0a05e9024672083d5883b525c031eea940e556",
+    "https://deno.land/x/sentry@7.109.0/index.mjs": "b71b37592167c49cce24f5cb097c55e6ff8cc90977ce0b66e0a7b0cc7add1d6a",
+    "https://esm.sh/ky@1.2.3": "56edb0459067654180fbfd1c8f63bf1b9eef47b86e1d4214f20bfbe0c0fab3fc",
     "https://esm.sh/twemoji-parser@14.0.0": "0f9f6b70d5d176413c91f31f0edbfbc850a0b2d5a43fe2387f5562adcdac442f",
     "https://esm.sh/v102/@types/twemoji-parser@13.1.1/index.d.ts": "657a09639e2fedee294a277c6df6f9a76100b27096e56ab44960ed58d09e2bbe",
-    "https://esm.sh/v102/twemoji-parser@14.0.0/deno/twemoji-parser.js": "9a07efc976105b10181e8fc4a99be526fdcfe3f085fb4d8f746f3c027d9b42b4"
+    "https://esm.sh/v102/twemoji-parser@14.0.0/deno/twemoji-parser.js": "9a07efc976105b10181e8fc4a99be526fdcfe3f085fb4d8f746f3c027d9b42b4",
+    "https://esm.sh/v135/ky@1.2.3/denonext/ky.mjs": "8078c21e218d07c5eeb60e06d6869d953dcf279851375a4567730b4f70e92810"
   }
 }
