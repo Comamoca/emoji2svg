@@ -2,6 +2,17 @@ import { Hono } from "hono";
 import twemoji from "twemoji";
 import { DOMParser } from "domparser";
 import { serveStatic } from "middleware";
+import * as Sentry from "sentry";
+import "dotenv";
+
+if (typeof Deno.env.get("SENTRY_DSN") !== "undefined") {
+  const dsn = Deno.env.get("SENTRY_DSN");
+  console.log(`Sentry DSN: ${dsn}`);
+
+  Sentry.init({
+    dsn: dsn,
+  });
+}
 
 function emoji2Url(emoji: string): string {
   const html = twemoji.parse(emoji, {
