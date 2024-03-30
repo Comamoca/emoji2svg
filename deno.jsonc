@@ -3,7 +3,9 @@
     "hono": "https://deno.land/x/hono@v4.1.5/mod.ts",
     "twemoji": "npm:@twemoji/api",
     "domparser": "https://deno.land/x/deno_dom/deno-dom-wasm.ts",
-    "middleware": "https://deno.land/x/hono@v4.1.5/middleware.ts"
+    "middleware": "https://deno.land/x/hono@v4.1.5/middleware.ts",
+    "sentry": "https://deno.land/x/sentry/index.mjs",
+    "dotenv": "https://deno.land/std@0.221.0/dotenv/load.ts"
   },
   "tasks": {
     "run": "deno run -A main.ts"
