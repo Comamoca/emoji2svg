@@ -6,6 +6,7 @@ function emoji2Url(emoji: string): string {
   const html = twemoji.parse(emoji, {
     folder: "svg",
     ext: ".svg",
+    base: "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/",
   });
   const docment = new DOMParser().parseFromString(html, "text/html");
   const url = docment?.querySelector("img")?.getAttribute("src");
