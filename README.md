@@ -33,6 +33,9 @@ API of convert emoji to SVG🍣
 
 ## 🚀 How to use
 
+If you have sentry account, you can use error tracking for sentry.
+Set sentry dsn to enviroment variable `SENTRY_DSN`.
+
 ```
 curl https://emoji2svg.deno.dev/api/🦊
 ```

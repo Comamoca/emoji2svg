@@ -31,6 +31,9 @@
 
 ## 🚀 使い方
 
+Sentryのアカウントをお持ちの場合はSentryによるエラー追跡を利用できます。
+環境変数`SENTRY_DSN`にSentryのDSNをセットしてください。
+
 ```
 curl https://emoji2svg.deno.dev/api/🦊
 ```
