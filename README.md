@@ -7,7 +7,7 @@
 ![Bug Issues](https://img.shields.io/github/issues/Comamoca/baserepo/bug?style=flat-square)
 ![Uptime Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Comamoca/status/master/api/emoji2svg/uptime-day.json&style=flat-square)
 
-<img src="https://emoji2svg.deno.dev/api/🍣" alt="eyecatch" height="100">
+<img src="https://emoji2svg.comamoca.dev/api/🍣" alt="eyecatch" height="100">
 
 # emoji2svg
 
@@ -37,7 +37,7 @@ If you have sentry account, you can use error tracking for sentry.
 Set sentry dsn to enviroment variable `SENTRY_DSN`.
 
 ```
-curl https://emoji2svg.deno.dev/api/🦊
+curl https://emoji2svg.comamoca.dev/api/🦊
 ```
 
 ## ⛏️ Development
