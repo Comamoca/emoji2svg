@@ -7,6 +7,8 @@ import gleam/list
 import gleam/result
 import gleam/string
 import gleam/uri
+import glogg/handler
+import glogg/level
 import glogg/logger
 import hinoto
 import hinoto/body.{type Body}
@@ -96,6 +98,8 @@ pub fn emoji_api(str: String) -> Promise(response.Response(Body)) {
 ///
 /// Routes `/api/<emoji>` to the SVG converter, everything else to 404.
 pub fn main() {
+  handler.set_default_handler_minimum_level(level.Info)
+
   let log = logger.new("emoji2svg")
 
   workers.serve(fn(hinoto) {
@@ -110,7 +114,7 @@ pub fn main() {
             }
 
             log
-            |> logger.info("emoji request", [
+            |> logger.info("emoji request: " <> emoji, [
               logger.string("emoji", emoji),
             ])
 
