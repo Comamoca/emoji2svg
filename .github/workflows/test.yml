@@ -17,8 +17,8 @@ jobs:
           otp-version: false
           gleam-version: "latest"
       - run: gleam deps download
+      - uses: oven-sh/setup-bun@v2
       - run: gleam test
       - run: gleam format --check src test
-      - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun run test:workers
