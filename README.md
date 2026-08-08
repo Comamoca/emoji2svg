@@ -33,9 +33,6 @@ API of convert emoji to SVG🍣
 
 ## 🚀 How to use
 
-If you have sentry account, you can use error tracking for sentry.
-Set sentry dsn to enviroment variable `SENTRY_DSN`.
-
 ```
 curl https://emoji2svg.comamoca.dev/api/🦊
 ```
@@ -56,8 +53,9 @@ MIT
 
 ### 🧩 Modules
 
-- [Hono](https://hono.dev)
-- [twemoji-parser](https://github.com/twitter/twemoji-parser)
+- [Gleam](https://gleam.run)
+- [hinoto](https://github.com/Comamoca/hinoto)
+- [Twemoji](https://github.com/twitter/twemoji) — Emoji graphics are licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## 👏 Affected projects
 

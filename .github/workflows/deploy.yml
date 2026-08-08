@@ -22,8 +22,8 @@ jobs:
       - name: Setup Gleam
         uses: erlef/setup-beam@v1
         with:
-          otp-version: "28"
-          gleam-version: "1.14.0"
+          otp-version: false
+          gleam-version: "latest"
 
       - name: Install dependencies
         run: bun install --frozen-lockfile

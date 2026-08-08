@@ -7,6 +7,7 @@ import gleam/list
 import gleam/result
 import gleam/string
 import gleam/uri
+import glogg/logger
 import hinoto
 import hinoto/body.{type Body}
 import hinoto/runtime/workers
@@ -95,15 +96,30 @@ pub fn emoji_api(str: String) -> Promise(response.Response(Body)) {
 ///
 /// Routes `/api/<emoji>` to the SVG converter, everything else to 404.
 pub fn main() {
+  let log = logger.new("emoji2svg")
+
   workers.serve(fn(hinoto) {
     use hinoto <- promise.await(
       hinoto
       |> hinoto.handle(fn(req) {
         case request.path_segments(req) {
-          ["api", str] -> emoji_api(str)
-          _ ->
+          ["api", str] -> {
+            log
+            |> logger.info("emoji request", [
+              logger.string("emoji", str),
+            ])
+
+            emoji_api(str)
+          }
+          _ -> {
+            log
+            |> logger.warning("not found", [
+              logger.string("path", req.path),
+            ])
+
             not_found()
             |> promise.resolve
+          }
         }
       }),
     )
