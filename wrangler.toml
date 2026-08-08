@@ -13,3 +13,10 @@ command = "gleam build --target javascript"
 
 [assets]
 directory = "./public"
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
