@@ -14,8 +14,11 @@ jobs:
       - uses: actions/checkout@v7
       - uses: erlef/setup-beam@v1
         with:
-          otp-version: "28"
-          gleam-version: "1.14.0"
+          otp-version: false
+          gleam-version: "latest"
       - run: gleam deps download
       - run: gleam test
       - run: gleam format --check src test
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run test:workers

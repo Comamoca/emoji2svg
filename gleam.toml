@@ -20,6 +20,9 @@ gleam_http = ">= 4.3.0 and < 5.0.0"
 hinoto = { git = "https://github.com/Comamoca/hinoto", ref = "main" }
 gleam_fetch = ">= 1.4.0 and < 2.0.0"
 
+[javascript]
+runtime = "bun"
+
 [dev-dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"
 hinoto_cli = { git = "https://github.com/Comamoca/hinoto_cli", ref = "main" }
