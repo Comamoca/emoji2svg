@@ -20,16 +20,19 @@ packages = [
   { name = "gleam_time", version = "1.8.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleam_time", source = "hex", outer_checksum = "533D8723774D61AD4998324F5DD1DABDCDBFABAFB9E87CB5D03C6955448FC97D" },
   { name = "gleeunit", version = "1.11.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleeunit", source = "hex", outer_checksum = "EC31ABA74256AEA531EDF8169931D775BBB384FED0A8A1BDC4DD9354E3E21826" },
   { name = "glisten", version = "9.0.1", build_tools = ["gleam"], requirements = ["gleam_erlang", "gleam_otp", "gleam_stdlib", "logging"], otp_app = "glisten", source = "hex", outer_checksum = "7795AA50830656F3A0316A6B26595F893C83272DA901B3405E31339CAA31A10B" },
+  { name = "glogg", version = "1.3.0", build_tools = ["gleam"], requirements = ["gleam_erlang", "gleam_json", "gleam_stdlib", "gleam_time", "logger_formatter_json"], otp_app = "glogg", source = "hex", outer_checksum = "46DCD3AE996974955275F02BB58F2DB1703E348C88F08E95FA9121BC87C1D0E3" },
   { name = "gramps", version = "6.0.1", build_tools = ["gleam"], requirements = ["gleam_crypto", "gleam_erlang", "gleam_http", "gleam_stdlib"], otp_app = "gramps", source = "hex", outer_checksum = "D55636072DEE173F6586A5679D3C02EC7A0DE3F8646B78C351B72908FF223DF7" },
   { name = "handles", version = "5.0.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "handles", source = "hex", outer_checksum = "99967BED02558973B5C55EF36264661F0E4BC4E672EB85D970D6FF7A774FAC7A" },
   { name = "hinoto", version = "0.0.1", build_tools = ["gleam"], requirements = ["gleam_erlang", "gleam_http", "gleam_javascript", "gleam_stdlib", "mist"], source = "git", repo = "https://github.com/Comamoca/hinoto", commit = "a5967a8db24cd2cad5dce7b766c7c5342ea2439c" },
   { name = "hinoto_cli", version = "0.0.1", build_tools = ["gleam"], requirements = ["argv", "clip", "filepath", "gleam_community_ansi", "gleam_javascript", "gleam_stdlib", "handles", "shellout", "simplifile", "snag", "tom"], source = "git", repo = "https://github.com/Comamoca/hinoto_cli", commit = "d1f1c3b90eeb252e19e5594a05515c835a3b89a5" },
   { name = "hpack_erl", version = "0.3.0", build_tools = ["rebar3"], requirements = [], otp_app = "hpack", source = "hex", outer_checksum = "D6137D7079169D8C485C6962DFE261AF5B9EF60FBC557344511C1E65E3D95FB0" },
+  { name = "logger_formatter_json", version = "0.8.4", build_tools = ["rebar3"], requirements = ["thoas"], otp_app = "logger_formatter_json", source = "hex", outer_checksum = "0376034D216E94AFF714E443E86951AC7AE83624F680A3F4F49BFFCC62054193" },
   { name = "logging", version = "1.5.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "logging", source = "hex", outer_checksum = "BC5F18CE5DD9686100229FE5409BDC3DD5C46D5A7DF2F804AD2D8F0DD6C5060E" },
   { name = "mist", version = "6.0.3", build_tools = ["gleam"], requirements = ["exception", "gleam_erlang", "gleam_http", "gleam_otp", "gleam_stdlib", "glisten", "gramps", "hpack_erl", "logging"], otp_app = "mist", source = "hex", outer_checksum = "1B07F321D5FA0CB162D81496F2DE96AEB6EF8980F4F38230A4CC3F849497E020" },
   { name = "shellout", version = "1.8.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "shellout", source = "hex", outer_checksum = "C416356D45151F298108C9DB9CD1EDE0313F620B5EDBB5766CD7237659D87841" },
   { name = "simplifile", version = "2.7.0", build_tools = ["gleam"], requirements = ["filepath", "gleam_stdlib"], otp_app = "simplifile", source = "hex", outer_checksum = "A2727627B063E87351934C7F7F008F2D1FDB16F6DE0B8C79F9E46459CFC9C164" },
   { name = "snag", version = "1.2.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "snag", source = "hex", outer_checksum = "274F41D6C3ECF99F7686FDCE54183333E41D2C1CA5A3A673F9A8B2C7A4401077" },
+  { name = "thoas", version = "1.2.1", build_tools = ["rebar3"], requirements = [], otp_app = "thoas", source = "hex", outer_checksum = "E38697EDFFD6E91BD12CEA41B155115282630075C2A727E7A6B2947F5408B86A" },
   { name = "tom", version = "2.1.0", build_tools = ["gleam"], requirements = ["gleam_stdlib", "gleam_time"], otp_app = "tom", source = "hex", outer_checksum = "DCF04CB7AB35D58CFC598C66EA2E1816D160759802C89B2BA6238780D59BC256" },
 ]
 
@@ -39,5 +42,6 @@ gleam_http = { version = ">= 4.3.0 and < 5.0.0" }
 gleam_javascript = { version = ">= 1.0.1 and < 2.0.0" }
 gleam_stdlib = { version = ">= 0.44.0 and < 2.0.0" }
 gleeunit = { version = ">= 1.0.0 and < 2.0.0" }
+glogg = { version = ">= 1.3.0 and < 2.0.0" }
 hinoto = { git = "https://github.com/Comamoca/hinoto", ref = "main" }
 hinoto_cli = { git = "https://github.com/Comamoca/hinoto_cli", ref = "main" }
