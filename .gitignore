@@ -1,1 +1,11 @@
-.env
+*.beam
+*.ez
+/build
+erl_crash.dump
+
+# Local tooling
+node_modules/
+.commandcode/
+.direnv/
+.omo/
+.wrangler/

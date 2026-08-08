@@ -1,0 +1,9 @@
+name = "emoji2svg"
+main = "build/dev/javascript/emoji2svg/index.js"
+compatibility_date = "2023-09-22"
+
+[build]
+command = "gleam build --target javascript"
+
+[assets]
+directory = "./public"
