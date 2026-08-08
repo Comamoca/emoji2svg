@@ -1,10 +1,10 @@
 <div align="center">
 
-![Last commit](https://img.shields.io/github/last-commit/Comamoca/baserepo?style=flat-square)
-![Repository Stars](https://img.shields.io/github/stars/Comamoca/baserepo?style=flat-square)
-![Issues](https://img.shields.io/github/issues/Comamoca/baserepo?style=flat-square)
-![Open Issues](https://img.shields.io/github/issues-raw/Comamoca/baserepo?style=flat-square)
-![Bug Issues](https://img.shields.io/github/issues/Comamoca/baserepo/bug?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/Comamoca/emoji2svg?style=flat-square)
+![Repository Stars](https://img.shields.io/github/stars/Comamoca/emoji2svg?style=flat-square)
+![Issues](https://img.shields.io/github/issues/Comamoca/emoji2svg?style=flat-square)
+![Open Issues](https://img.shields.io/github/issues-raw/Comamoca/emoji2svg?style=flat-square)
+![Bug Issues](https://img.shields.io/github/issues/Comamoca/emoji2svg/bug?style=flat-square)
 ![Uptime Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Comamoca/status/master/api/emoji2svg/uptime-day.json&style=flat-square)
 
 <img src="https://emoji2svg.comamoca.dev/api/🍣" alt="eyecatch" height="100">

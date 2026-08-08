@@ -18,11 +18,19 @@ jobs:
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
+
+      - name: Setup Gleam
+        uses: erlef/setup-beam@v1
         with:
-          cache: true
+          otp-version: "28"
+          gleam-version: "1.14.0"
+          rebar3-version: "3"
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Download Gleam dependencies
+        run: gleam deps download
 
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v4
