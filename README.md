@@ -1,24 +1,64 @@
+<div align="center">
+
+![Last commit](https://img.shields.io/github/last-commit/Comamoca/baserepo?style=flat-square)
+![Repository Stars](https://img.shields.io/github/stars/Comamoca/baserepo?style=flat-square)
+![Issues](https://img.shields.io/github/issues/Comamoca/baserepo?style=flat-square)
+![Open Issues](https://img.shields.io/github/issues-raw/Comamoca/baserepo?style=flat-square)
+![Bug Issues](https://img.shields.io/github/issues/Comamoca/baserepo/bug?style=flat-square)
+![Uptime Status](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Comamoca/status/master/api/emoji2svg/uptime-day.json&style=flat-square)
+
+<img src="https://emoji2svg.comamoca.dev/api/🍣" alt="eyecatch" height="100">
+
 # emoji2svg
 
-[![Package Version](https://img.shields.io/hexpm/v/emoji2svg)](https://hex.pm/packages/emoji2svg)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/emoji2svg/)
+API of convert emoji to SVG🍣
+
+<br>
+<br>
+
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center">🍔English</th>
+      <th style="text-align:center"><a href="README.ja.md">🍡日本語</a></th>
+    </tr>
+  </thead>
+</table>
+
+<div align="center">
+
+</div>
+
+## 🚀 How to use
+
+If you have sentry account, you can use error tracking for sentry.
+Set sentry dsn to enviroment variable `SENTRY_DSN`.
+
+```
+curl https://emoji2svg.comamoca.dev/api/🦊
+```
+
+## ⛏️ Development
 
 ```sh
-gleam add emoji2svg@1
-```
-```gleam
-import emoji2svg
-
-pub fn main() -> Nil {
-  // TODO: An example of the project in use
-}
+deno task run
 ```
 
-Further documentation can be found at <https://hexdocs.pm/emoji2svg>.
+## 📝 Todo
 
-## Development
+- [ ] Allow size selection
 
-```sh
-gleam run   # Run the project
-gleam test  # Run the tests
-```
+## 📜 License
+
+MIT
+
+### 🧩 Modules
+
+- [Hono](https://hono.dev)
+- [twemoji-parser](https://github.com/twitter/twemoji-parser)
+
+## 👏 Affected projects
+
+[URLで絵文字を指定したらTwemoji画像を返す仕組みを作った by Cloud Functions](https://zenn.dev/team_zenn/articles/5b331a95a6f6f5)
