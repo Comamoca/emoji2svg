@@ -104,9 +104,14 @@ pub fn main() {
       |> hinoto.handle(fn(req) {
         case request.path_segments(req) {
           ["api", str] -> {
+            let emoji = case uri.percent_decode(str) {
+              Ok(decoded) -> decoded
+              Error(_) -> str
+            }
+
             log
             |> logger.info("emoji request", [
-              logger.string("emoji", str),
+              logger.string("emoji", emoji),
             ])
 
             emoji_api(str)
