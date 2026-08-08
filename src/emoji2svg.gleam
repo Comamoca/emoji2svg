@@ -62,8 +62,15 @@ fn text_response(
 }
 
 /// Returns the given SVG string as a 200 OK response.
+///
+/// Sets a long `Cache-Control` so the Worker response can be cached by
+/// Workers Cache at the edge.
 pub fn return_svg(svg: String) -> response.Response(Body) {
   text_response(200, svg, "image/svg+xml")
+  |> response.set_header(
+    "cache-control",
+    "public, max-age=604800, s-maxage=604800",
+  )
 }
 
 /// Returns a 500 Internal Server Error response.
