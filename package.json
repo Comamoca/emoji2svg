@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test:workers": "vitest run"
+  },
+  "dependencies": {
+    "twemoji": "^14.0.2"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.20.3",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
